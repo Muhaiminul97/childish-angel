@@ -32,6 +32,7 @@ public class TestApk {
 
     @Test
     public void sum() {
+        //1st way to validate
         driver.findElement(By.id("digit_1")).click();
         driver.findElement(By.id("op_add")).click();
         driver.findElement(By.id("digit_6")).click();
@@ -50,6 +51,8 @@ public class TestApk {
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.id("clr")).click();
+
+        //2nd Way to validate
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.id("digit_5")).click();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
